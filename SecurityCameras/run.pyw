@@ -7,12 +7,13 @@ import os
 import requests
 
 # RTSP login and streams
-rtsp_login = "username:password"  # Change this to your RTSP login credentials
+rtsp_login = "user:pass"  # Change this to your RTSP login credentials
+ip = "10.0.0.1" #change to your ip
 streams = [
-    f"rtsp://{rtsp_login}@192.168.0.22:554/ch1/1/",
-    f"rtsp://{rtsp_login}@192.168.0.22:554/ch2/1/",
-    f"rtsp://{rtsp_login}@192.168.0.22:554/ch3/1/",
-    f"rtsp://{rtsp_login}@192.168.0.22:554/ch4/1/"
+    f"rtsp://{rtsp_login}@{ip}:554/ch1/1/",
+    f"rtsp://{rtsp_login}@{ip}:554/ch2/1/",
+    f"rtsp://{rtsp_login}@{ip}:554/ch3/1/",
+    f"rtsp://{rtsp_login}@{ip}:554/ch4/1/"
 ]  # Add more streams as needed
 
 # Tkinter setup
